@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portal Sucre</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-times"></i>
+        </div>
+        <a href="index.html" class="logo"><img src="imagenes/logo-rosa.png" /></a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#categorias" class="nav-link">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Novedades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h2 class="sub-headline">
+        <span class="first-letter">B</span>ienvenido
+      </h2>
+      <h1 class="headline">Portal Sucre</h1>
+      <div class="headline-description">
+        <div class="separator">
+          <div class="line line-left"></div>
+          <div class="asterisk">
+            <i class="fa fa-asterisk"></i>
+          </div>
+          <div class="line line-right"></div>
+        </div>
+        <div class="single-animation">
+          <h5>Listo para vender</h5>
+          <a href="#" class="btn cta-btn">Vender</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Discover section -->
+  <section class="discover-our-story" id="categorias">
+    <div class="container">
+      <div class="restaurant-info">
+        <div class="restaurant-description padding-right animate-left">
+          <div class="global-headline">
+            <h2 class="sub-headline">
+              <span class="first-letter">C</span>ategorias
+            </h2>
+            <h1 class="headline headline-dark">Nuestros alcances</h1>
+            <div class="asterisk">
+              <i class="fa fa-asterisk"></i>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#" class="btn body-btn">Acerca de nosotros</a>
+        </div>
+        <div class="restaurant-info-img animate-right">
+          <img src="imagenes/our-story-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tasteful-recipes between">
+    <div class="container">
+    <div class="usuario-accion">
+      <div class="publicar">
+        <div class="tab-publicar">
+          <i class="fa fa-edit"></i>
+          <p>Publicar</p>
+        </div>
+        <div class="publicar-form">
+          <label for="categoria">Categoria:</label>
+          <input type="text" name="categoria" placeholder="Categoria" class="input"><br />
+          <label for="calidad">Calidad:</label>
+          <input type="text" name="calidad" placeholder="Calidad" class="input"><br />
+          <label for="municipio">Municipio:</label>
+          <input type="text" name="municipio" placeholder="Municipio" class="input"><br />
+          <label for="tiempo">Tiempo:</label>
+          <input type="text" name="timepo" placeholder="tiempo" class="input"><br />
+          <label for="foto">Fotos:</label>
+          <input type="text" name="foto" placeholder="Fotos" class="input"><br />
+          <label for="descripcion">Descripcion:</label>
+          <input type="text" name="descripcion" placeholder="Descripcion" class="input"><br />
+          <label for="precio">Precio:</label>
+          <input type="text" name="precio" placeholder="precio" class="input">
+          <input type="radio" name="moneda" value="Bs" checked>
+          <label for="">Bs</label>
+          <input type="radio" name="moneda" value="Sus">
+          <label for="">Sus</label>
+          <button>Registrarse</button>
+        </div>
+      </div>
+
+      <div class="usuario">
+        <div class="tabs-usuario">
+          <div class="tab entrar active">
+            <i class="fa fa-user"></i>
+            <p>Entrar</p>
+          </div>
+          <div class="tab registrar">
+            <i class="fa fa-user-plus"></i>
+            <p>Registrar</p>
+          </div>
+        </div>
+        <div class="signup-form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" placeholder="Nombre"><br />
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" placeholder="Apellido"><br />
+          <label for="fnacimiento">Fecha de nacimiento:</label>
+          <input type="text" name="fnacimiento" placeholder="Fecha de nacimiento" pattern="(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))/(?:(?:0[1-9]|1[0-2])/(?:19|20)[0-9]{2}"><br />
+          <label for="correo">Correo:</label>
+          <input type="text" name="correo" placeholder="Su correo"><br />
+          <label for="telefono">Telefono:</label>
+          <input type="text" name="telefono" placeholder="Nro de telefono"><br />
+          <label for="clave">Clave:</label>
+          <input type="password" name="clave" placeholder="Escoja una clave"><br />
+          <label for="cclave">Confirme clave:</label>
+          <input type="password" name="cclave" placeholder="Confirme clave"><br />
+          <button>Registrarse</button>
+        </div>
+
+        <div class="login-form">
+          <label for="correo">Correo:</label>
+          <input type="text" name="lcorreo" placeholder="Correo" class="input"><br />
+          <label for="lclave">Correo:</label>
+          <input type="password" name="lclave" placeholder="Clave" class="input"><br />
+          <button>Entrar</button>
+          <span><a href="#">Olvide mi clave.</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="discover-our-menu">
+    <div class="container">
+      <div class="restaurant-info">
+        <div class="image-group padding-right animate-left">
+          <img src="imagenes/menu-group-1.jpg" alt="">
+          <img src="imagenes/menu-group-2.jpg" alt="">
+          <img src="imagenes/menu-group-3.jpg" alt="">
+          <img src="imagenes/menu-group-4.jpg" alt="">
+        </div>
+        <div class="restaurant-description animate-right">
+          <div class="global-headline">
+            <h2 class="sub-headline">
+              <span class="first-letter">N</span>ovedades
+            </h2>
+            <h1 class="headline headline-dark">En nuestra tienda</h1>
+            <div class="asterisk">
+              <i class="fa fa-asterisk"></i>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#" class="btn body-btn">Vea los productos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Discover our menu end -->
+  <section class="perfect-blend between">
+    <div class="container">
+      <div class="global-headline">
+        <div class="animate-top">
+          <h2 class="sub-headline">
+            <span class="first-letter">T</span>ienda
+          </h2>
+        </div>
+        <div class="animate-bottom">
+          <h1 class="headline">En sucre</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perfect blend end -->
+  <section class="culinary-delight">
+    <div class="restaurant-info">
+      <div class="restaurant-description padding-right animate-left">
+        <div class="global-headline">
+          <h2 class="sub-headline">
+            <span class="first-letter">C</span>ulinary
+          </h2>
+          <h1 class="headline headline-dark">Delight</h1>
+          <div class="asterisk">
+            <i class="fa fa-asterisk"></i>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="btn body-btn">Make a reservation</a>
+      </div>
+      <div class="image-group">
+        <img class="animate-top" src="imagenes/delight-group-1.jpg" alt="">
+        <img class="animate-bottom" src="imagenes/delight-group-2.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Culinary delight end -->
+  <footer>
+    <div class="container">
+      <div class="back-to-top">
+        <a href="#hero"><i class="fa fa-chevron-up"></i></a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content-about animate-top">
+          <h4>About Rosa</h4>
+          <div class="asterisk">
+            <i class="fa fa-asterisk"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="footer-content-divider animate-bottom">
+          <div class="social-media">
+            <h4>Follow along</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="newsletter-container">
+            <h4>Noticias</h4>
+            <form class="newsletter-form" action="">
+              <input type="text" class="newsletter-input" placeholder="Your email address...">
+              <button class="newsletter-btn" type="submit">
+                <i class="fa fa-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</html>
