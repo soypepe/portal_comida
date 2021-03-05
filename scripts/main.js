@@ -19,20 +19,15 @@ items.forEach(clickedItem => {
 });
 
 $(".signup-form").hide();
-// $(".tab purple").css("background", "none");
 
 $(".tab.registrar").click(function(){
   $(".signup-form").show();
   $(".login-form").hide();
-  // $(".tab pink").css("background", "none");
-  // $(".tab purple").css("background", "#fff");
 });
 
 $(".tab.entrar").click(function(){
   $(".signup-form").hide();
   $(".login-form").show();
-  // $(".tab purple").css("background", "none");
-  // $(".tab pink").css("background", "#fff");
 });
 
 $(".btn").click(function(){
@@ -64,10 +59,6 @@ $('#form-usuario').on('click', '#botonlg', function(event){
                   let data = JSON.parse(datos);
                   if(!data.error){
                         var url = '#';
-                        //$('h1').hide();
-                        //location.reload();
-                        //window.location.href = "index.php#form-usr";
-                        //$('#publicar').load(' #publicar');
                         $('#form-usuario').load(' #form-usuario > *');
                   }else{
                         console.log(data.errorDescripcion);
@@ -117,15 +108,11 @@ $('#form-usuario').on('click', '.tabs-usuario', function(event){
 	$(".tab.registrar").click(function(){
 	$(".signup-form").show();
 	$(".login-form").hide();
-	// $(".tab pink").css("background", "none");
-	// $(".tab purple").css("background", "#fff");
 	});
 
 	$(".tab.entrar").click(function(){
 	  $(".signup-form").hide();
 	  $(".login-form").show();
-	  // $(".tab purple").css("background", "none");
-	  // $(".tab pink").css("background", "#fff");
 	});
 	
 	const tabs = document.querySelectorAll('.tab');
@@ -147,65 +134,12 @@ $('#form-usuario').on('click', '#salir', function(event){
           method: "POST",
           data:{accion:accion},
           success:function(datos){
-                //$('h1').hide();
-                //location.reload();
-                //window.location.href = 'index.php#form-usr';
-                //$('#publicar').load(' #publicar');
 		$('.signup-form').hide();
                 $('#form-usuario').load(' #form-usuario > *');
 		$('.signup-form').hide();
           }
         });
 });
-
-/*$(document).ready(function(){
-  $('#botonlg').click(function(){
-        let correo = $('#fcorreo').val();
-        let clave = $('#fclave').val();
-        if(correo != '' && clave != ''){
-          $.ajax({
-                url: "backend/entrar.php",
-                method: "POST",
-                data: {correo:correo, clave:clave},
-                success:function(datos){
-                  let data = JSON.parse(datos);
-                  if(!data.error){
-                        var url = '#';
-                        //$('h1').hide();
-			//location.reload();
-                        //window.location.href = "index.php#form-usr";
-			$('#publicar').load(location.href + ' #publicar > *');
-			$('#usuario').load(location.href + ' #usuario > *');
-                  }else{
-                        console.log(data.errorDescripcion);
-                  }
-                }
-          });
-        }
-  });
-
-  $('#botonpubli').click(function(){
-	$('#publicar').load(' #publicar');
-	$('#usuario').load(' #usuario');
-});
-
-  $('#salir').click(function(){
-        let accion = "salir";
-        $.ajax({
-          url: "backend/salir.php",
-          method: "POST",
-          data:{accion:accion},
-          success:function(datos){
-                //$('h1').hide();
-		//location.reload();
-                //window.location.href = 'index.php#form-usr';
-		$('#publicar').load(location.href + ' #publicar > *');
-		$('#usuario').load(location.href + ' #usuario > *');
-          }
-        });
-  });
-
-});*/
 
 //Ver al desplazar
 
